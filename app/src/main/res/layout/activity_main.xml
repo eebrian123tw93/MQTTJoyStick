@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.9"
+    android:background="@drawable/s_9953304"
+    tools:context=".MainActivity">
+
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/joystick"
+        android:layout_width="203dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@mipmap/ic_joystick_foreground_02"
+        custom:JV_backgroundSizeRatio="68%"
+        custom:JV_borderAlpha="100"
+        custom:JV_borderColor="#00796B"
+        custom:JV_buttonImage="@mipmap/ic_joystick_foreground_01"
+        custom:JV_buttonSizeRatio="40%"
+        custom:JV_fixedCenter="true"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_button_1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="135dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/img_1836"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_button_2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="75dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/img_1837"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_button_4"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_1" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_button_4"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="60dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/img_1839"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_1" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image_button_3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="135dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/img_1838"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_button_1" />
+
+    <Button
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="編輯"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_button_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/img_1843"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            tools:layout_editor_absoluteX="226dp"
+            tools:layout_editor_absoluteY="296dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_button_7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/img_1838"
+            android:visibility="invisible"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            tools:layout_editor_absoluteX="226dp"
+            tools:layout_editor_absoluteY="296dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_button_6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/img_1843"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            tools:layout_editor_absoluteX="335dp"
+            tools:layout_editor_absoluteY="296dp" />
+
+
+    </LinearLayout>
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/connect_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        app:cb_color="#99CC00"
+        app:cb_pressedRingWidth="8dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reconnect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重新連線"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -70,8 +70,8 @@ public class SplashActivity extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                startActivity(intent, options.toBundle());
-                finish();
+//                startActivity(intent, options.toBundle());
+//                finish();
             }
         });
     }
